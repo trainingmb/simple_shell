@@ -138,7 +138,11 @@ char *genstring(char *str, int startpos, int len)
 	substr[len] = '\0';
 	return (substr);
 }
-
+/**
+ * checkmalloc - Check if allocation was correct
+ * @created: Created Nul terminated array of strings
+ * @pos: Position indicator in string
+ **/
 void checkmalloc(char **created, int pos)
 {
 	size_t i;
